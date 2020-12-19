@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Work+Sans:wght@300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
 body{
     width: 100%;
     height: 100%;
@@ -12,6 +15,9 @@ button{
     padding: 1rem;
     color: white;
     background: #5370d8;
+    &:hover{
+        opacity: 50%;
+    }
 }
 .top{
     display: flex;
@@ -25,8 +31,8 @@ button{
             left: 2rem;
         }
         .top_content_hero{
-            padding: 10rem 10rem 10rem;
-
+            padding: 3.5rem 10rem;
+            
             h3{
                 font-size: 4rem;
                 font-weight: 700;
@@ -44,7 +50,7 @@ button{
 
     .top_sub-content{
         background: #7289da;
-        flex-basis: 40%;
+        flex-basis: 45%;
         display: flex;
         flex-direction: column;
         nav{
@@ -67,6 +73,7 @@ button{
         }
         img{
             max-width: 100%;
+
         }
     }
 }
@@ -77,13 +84,13 @@ footer{
     color: white;
     display: flex;
     .footer_info{
-        flex-basis: 50%;
-        padding: 8rem;
+        flex-basis: 60%;
+        padding: 6rem;
 
         h3{
             font-size: 4rem;
             font-weight: 700;
-            padding-right: 50%;
+            ///padding-right: 20%;
             
         }
 
@@ -94,13 +101,10 @@ footer{
             
         }
 
-        .logo{
-            position:absolute;
-            top: 53rem;
-        }
     }
 
     .footer_form{
+        display: flex;
         flex: 1;
         flex-direction: column;
         justify-content: center;
@@ -120,5 +124,8 @@ footer{
 img.logo{
     border: 1px solid white;
     border-radius: 50%;
-    width: 80px;
+    width: 60px;
+    &:hover{
+        cursor: pointer;
+    }
 }
