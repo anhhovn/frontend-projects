@@ -1,0 +1,46 @@
+// remove all basic style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: IntroFont;
+    src: url(Anurati-Regular.otf);
+}
+@font-face{
+    font-family: EndFont;
+    src: url(Ailerons-Regular.otf);
+}
+.intro{
+    height: 100vh;
+}
+
+//fit the whole video into screen\
+.intro video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.intro h1{
+    position: absolute;
+    top: 50%;                           //these 3 lines of code
+    left: 50%;                          //is to center h1 
+    transform: translate(-50%, -50%);   //after made it absolute
+    font-family: IntroFont;
+    font-size: 80px;
+    color: white;
+}
+
+section{
+    height: 100vh; //the same as intro div
+    color: black;
+}
+
+section h1{
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+    font-family: EndFont;
+}
