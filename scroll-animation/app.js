@@ -15,7 +15,6 @@ const scene = new ScrollMagic.Scene({
     triggerElemnt: intro,
     triggerHook: 0
 })
-.addIndicators()
 .setPin(intro) //set duration to intro (video). Apprximately one mouse scrolling / sec
 .addTo(controller);
 
@@ -32,4 +31,4 @@ scene.on("update",e =>{
 setInterval(() => {
     delay += (scrollpos - delay) * accelAmount;
     video.currentTime = scrollpos;
-},83.3)
+},83.3) //1000 / 12 = 83.3. Just a magic number
